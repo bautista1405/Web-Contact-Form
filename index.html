@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  
+  <title>Web Contact Form</title>
+</head>
+
+<body>
+    
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+    <a class="navbar-brand" href="#">Web Contact Form</a>
+      </div>
+    <ul class="nav navbar-nav">	  
+      <li><a href="#">Home</a></li>		  
+      <li><a href="#">Pricing</a></li>
+      <li class="active"><a href="#">Contact</a></li>
+      <li><a href="#">About us</a></li>
+    </ul>
+    
+    <ul class="nav navbar-nav navbar-right">
+    
+      <li><a href="#"><span class="glyphicon glyphicon-star-empty"></span> My profile</a></li>
+      
+       <li><a href="#"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+    </ul>
+    </div>
+  </nav>
+  
+  <form id="myForm" action="register.php" method="POST">
+
+		<div class="form-group">
+			<label for="first name">First name:</label>
+			<input type="text" class="form-control" name="firstName" id="firstName" placeholder="Enter first name">
+      <label for="last name">Last name:</label>
+			<input type="text" class="form-control" name="lastName" id="lastName" placeholder="Enter last name">
+      <label for="email">Email:</label>
+			<input type="text" class="form-control" name="email" id="email" placeholder="Enter email">
+     
+      <hr>
+      <label>Select your issue 
+          
+       <select>
+        
+      <option id="query" value="query">Query</option>
+      <option id="feedback" value="feedback">Feedback</option>
+      <option id="complaint" value="complaint">Complaint</option>
+      <option id="other" value="other">Other</option>
+       </select></label>
+    </div>
+		
+		<div class="form-group">
+			<label for="comment">Comment:</label>
+	  <textarea class="form-control" rows="5" name="comment" id="comment"></textarea>
+		</div>
+		
+		
+		
+		
+		<input type="submit" value="Submit" class="btn btn-primary">
+	</form>
+<hr>
+  
+<b>
+<div class="panel-footer panel-primary">
+    <div class="container">
+       <div class="row">
+         <div class="col-md-5 mb-5">
+           <ul class="list-unstyled list-spaced">
+             <li class="mb-2"><h6 class="text-uppercase">About</h6></li>
+             <li class="text-muted">
+               Simple web contact form. Requires your first name, your last name, your email 
+               and selecting a category to leave a comment. Then you submit all, and you get 
+               your information displayed in a second page.
+             </li>
+           </ul>
+         </div>
+         <div class="col-md-2 offset-md-1 mb-5">
+           <ul class="list-unstyled list-spaced">
+             <li class="mb-2"><h6 class="text-uppercase">Web Contact Form</h6></li>
+             <li class="text-muted">First Name</li>
+             <li class="text-muted">Last Name</li>
+             <li class="text-muted">Email</li>
+             <li class="text-muted">Comment</li>
+           </ul>
+         </div>
+         <div class="col-md-2 mb-5">
+           <ul class="list-unstyled list-spaced">
+             <li class="mb-2"><h6 class="text-uppercase">Resources</h6></li>
+             <li class="text-muted">Html</li>
+             <li class="text-muted">Css</li>
+             <li class="text-muted">Bootstrap</li>
+             <li class="text-muted">Php</li>
+           </ul>
+         </div>
+         <div class="col-md-2 mb-5">
+           <ul class="list-unstyled list-spaced">
+             <li class="mb-2"><h6 class="text-uppercase">Legal</h6></li>
+             <li class="text-muted">Terms</li>
+             <li class="text-muted">Legal</li>
+             <li class="text-muted">Privacy</li>
+             <li class="text-muted">License</li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+   
+   </div>
+ </b>
+
+
+
+</body>
+
+</html>
